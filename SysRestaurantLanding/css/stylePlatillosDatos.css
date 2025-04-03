@@ -1,0 +1,75 @@
+
+.neu-button {
+    background-color: #f7f5f5;
+    border-radius: 50px;
+    box-shadow: inset 4px 4px 10px #e20909, inset -4px -4px 10px #c7beee;
+    color: #dedede;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 15px 40px;
+    transition: all 0.2s ease-in-out;
+    border: 2px solid rgb(225, 237, 179);
+  }
+  
+  .neu-button:hover {
+    box-shadow: inset 2px 2px 5px #1705db, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
+  }
+  
+  .neu-button:focus {
+    outline: none;
+    box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #06e609, -2px -2px 5px #ffffff;
+  }
+
+
+
+
+.title {
+    font-size: 30px;
+}
+
+.custom-table {
+    width: 80% !important;
+    margin: 0 auto;
+    border: none;
+}
+
+.custom-table td {
+    border: none;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.imgDish {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 10px;
+}
+
+
+
+.redes-sociales {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .redes-sociales li {
+    margin-right: 20px;
+  }
+  
+  .redes-sociales a {
+    color: #dad7e7;
+    font-size: 24px;
+    transition: color 0.2s ease;
+  }
+  
+  .redes-sociales a:hover {
+    color: #1d1dd9;
+  }
+  
+  .fa {
+    font-family: 'FontAwesome';
+  }

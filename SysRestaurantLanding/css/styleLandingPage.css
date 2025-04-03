@@ -1,0 +1,231 @@
+
+.neu-button {
+    background-color: #f7f5f5;
+    border-radius: 50px;
+    box-shadow: inset 4px 4px 10px #e20909, inset -4px -4px 10px #c7beee;
+    color: #dedede;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 15px 40px;
+    transition: all 0.2s ease-in-out;
+    border: 2px solid rgb(225, 237, 179);
+  }
+  
+  .neu-button:hover {
+    box-shadow: inset 2px 2px 5px #1705db, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
+  }
+  
+  .neu-button:focus {
+    outline: none;
+    box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #06e609, -2px -2px 5px #ffffff;
+  }
+
+
+
+
+
+.body{
+    background-color: #4f403c;
+}
+
+.logoSysRestaurant{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+.redes-sociales {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .redes-sociales li {
+    margin-right: 20px;
+  }
+  
+  .redes-sociales a {
+    color: #3c20c9;
+    font-size: 24px;
+    transition: color 0.2s ease;
+  }
+  
+  .redes-sociales a:hover {
+    color: #cf1313;
+  }
+  
+  .fa {
+    font-family: 'FontAwesome';
+  }
+  
+
+/* From Uiverse.io by ChaudaryHammad */ 
+.loader {
+    perspective: 800px;
+  }
+  
+  .cube {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 3s linear infinite;
+  }
+  
+  .face {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    opacity: 0.8;
+  }
+  
+  .front {
+    transform: translateZ(20px);
+    background-color: #3498db;
+  }
+  
+  .back {
+    transform: translateZ(-20px);
+    background-color: #e74c3c;
+  }
+  
+  .left {
+    transform: rotateY(90deg) translateZ(20px);
+    background-color: #2ecc71;
+  }
+  
+  .right {
+    transform: rotateY(-90deg) translateZ(20px);
+    background-color: #f39c12;
+  }
+  
+  .top {
+    transform: rotateX(90deg) translateZ(20px);
+    background-color: #9b59b6;
+  }
+  
+  .bottom {
+    transform: rotateX(-90deg) translateZ(20px);
+    background-color: #e67e22;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotateX(0) rotateY(0) rotateZ(0);
+    }
+  
+    100% {
+      transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+  }
+  
+
+  
+/* From Uiverse.io by marcelodolza */ 
+.button {
+    --white: #ffe7ff;
+    --bg: #080808;
+    --radius: 100px;
+    outline: none;
+    cursor: pointer;
+    border: 0;
+    position: relative;
+    border-radius: var(--radius);
+    background-color: var(--bg);
+    transition: all 0.2s ease;
+    box-shadow:
+      inset 0 0.3rem 0.9rem rgba(255, 255, 255, 0.3),
+      inset 0 -0.1rem 0.3rem rgba(0, 0, 0, 0.7),
+      inset 0 -0.4rem 0.9rem rgba(255, 255, 255, 0.5),
+      0 3rem 3rem rgba(0, 0, 0, 0.3),
+      0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.8);
+  }
+  .button .wrap {
+    font-size: 25px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 32px 45px;
+    border-radius: inherit;
+    position: relative;
+    overflow: hidden;
+  }
+  .button .wrap p span:nth-child(2) {
+    display: none;
+  }
+  .button:hover .wrap p span:nth-child(1) {
+    display: none;
+  }
+  .button:hover .wrap p span:nth-child(2) {
+    display: inline-block;
+  }
+  .button .wrap p {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0;
+    transition: all 0.2s ease;
+    transform: translateY(2%);
+    mask-image: linear-gradient(to bottom, white 40%, transparent);
+  }
+  .button .wrap::before,
+  .button .wrap::after {
+    content: "";
+    position: absolute;
+    transition: all 0.3s ease;
+  }
+  .button .wrap::before {
+    left: -15%;
+    right: -15%;
+    bottom: 25%;
+    top: -100%;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+  .button .wrap::after {
+    left: 6%;
+    right: 6%;
+    top: 12%;
+    bottom: 40%;
+    border-radius: 22px 22px 0 0;
+    box-shadow: inset 0 10px 8px -10px rgba(255, 255, 255, 0.8);
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+  .button:hover {
+    box-shadow:
+      inset 0 0.3rem 0.5rem rgba(255, 255, 255, 0.4),
+      inset 0 -0.1rem 0.3rem rgba(0, 0, 0, 0.7),
+      inset 0 -0.4rem 0.9rem rgba(255, 255, 255, 0.7),
+      0 3rem 3rem rgba(0, 0, 0, 0.3),
+      0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.8);
+  }
+  .button:hover .wrap::before {
+    transform: translateY(-5%);
+  }
+  .button:hover .wrap::after {
+    opacity: 0.4;
+    transform: translateY(5%);
+  }
+  .button:hover .wrap p {
+    transform: translateY(-4%);
+  }
+  .button:active {
+    transform: translateY(4px);
+    box-shadow:
+      inset 0 0.3rem 0.5rem rgba(255, 255, 255, 0.5),
+      inset 0 -0.1rem 0.3rem rgba(0, 0, 0, 0.8),
+      inset 0 -0.4rem 0.9rem rgba(255, 255, 255, 0.4),
+      0 3rem 3rem rgba(0, 0, 0, 0.3),
+      0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.8);
+  }
+  
+
+
+
